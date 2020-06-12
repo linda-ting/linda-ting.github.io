@@ -82,6 +82,7 @@ li{
   text-align: center;
   float: left;
   margin-right: 10px;
+  margin-bottom: 10px;
   padding-right: 10px;
   padding-left: 10px;
   padding-top: 5px;
@@ -98,7 +99,7 @@ li{
 .nav {
   margin-left: 25%;  
   margin-top: 50px;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
   height: 30px;
   width: 50%;
 }
@@ -128,6 +129,7 @@ li{
   margin: auto;
   height: 28px;
   width: max-content;
+  flex-wrap: wrap;
 }
 
 .tag {
@@ -324,7 +326,7 @@ li{
   -webkit-filter: brightness(0);
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 900px) {
   .textcard {
     margin-left: 5%;
     width: 90%;
