@@ -324,10 +324,29 @@ li{
   -webkit-filter: brightness(0);
 }
 
-tr {
-  vertical-align: middle;
-}
+@media (max-width: 1000px) {
+  .textcard {
+    margin-left: 5%;
+    width: 90%;
+  }
+  
+  .gallery {
+    margin-left: 5%;
+    width: 90%;
+  }
+  
+  .gallerytitle {
+    margin-left: 5%;
+    width: 90%;
+  }
 
-td {
-  vertical-align: middle;
+  .nav {
+    margin-left: 5%;
+    width: 90%;
+  }
+
+  .footer {
+    margin-left: 5%;
+    width: 90%;
+  }
 }
