@@ -98,8 +98,8 @@ li{
 
 .nav {
   margin-left: 25%;  
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 40px;
+  margin-bottom: 40px;
   height: 30px;
   width: 50%;
 }
@@ -224,17 +224,15 @@ li{
   margin-left: 25%;
   display: block;
   text-align: center;
-  -webkit-column-count: 2;
-  -webkit-column-gap: 20px;
-  -moz-column-count: 2;
-  -moz-column-gap: 20px;
-  column-count: 2;
-  column-gap: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 
 .gallerycontainer{
-  width: 96%;
-  margin-right: 10px;
+  width: 46%;
   margin-bottom: 30px;
   border: 6px solid #fff;;
   border-radius: 5px;
@@ -326,7 +324,7 @@ li{
   -webkit-filter: brightness(0);
 }
 
-@media (max-width: 900px) {
+@media (max-width: 800px) {
   .textcard {
     margin-left: 5%;
     width: 90%;
@@ -343,6 +341,7 @@ li{
   }
 
   .nav {
+    margin-top: 20px;
     margin-left: 5%;
     width: 90%;
   }
