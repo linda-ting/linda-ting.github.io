@@ -343,7 +343,7 @@ li{
   position: absolute;
   background-color: #fff;
   min-width: 90px;
-  z-index: 1;
+  z-index: 2;
   line-height: 30px;
   border-radius: 5px;
 }
@@ -417,15 +417,21 @@ li{
   }
 
   .nav-content {
-    background-color: #e3eae4aa;
+    background-color: #e3eae466;
     border-radius: 5px;
     margin-top: 50px;
     margin-left: -20px;
+    padding-top: 10px;
     padding-left: 10px;
     display: none;
     position: absolute;
     width: min-content;
     z-index: 1;
+  }
+  
+  .dropdown-content{
+    margin-top: 0px;
+    margin-left: 100px;
   }
 
   .textcard {
