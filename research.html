@@ -28,31 +28,45 @@
 <body>
 
 <div class="nav">
-  <a href="index.html"><div class="nav-btn">
-    home
-  </div></a>
+  <div class="nav-content">
+    <a href="index.html"><div class="nav-btn">
+      home
+    </div></a>
 
-  <a href="graphics.html"><div class="nav-btn">
-    code
-  </div></a>
-  
-  <a href="research.html"><div class="nav-btn">
-    research
-  </div></a>
+    <a href="graphics.html"><div class="nav-btn">
+      code
+    </div></a>
+    
+    <a href="research.html"><div class="nav-btn">
+      research
+    </div></a>
 
-  <div class="dropdown"><a href="design.html"><div class="nav-btn">design</div></a>
-      <div class="dropdown-content">
-        <a href="spotify.html">spotify</a><br/>
-        <a href="dp.html">the dp</a><br/>
-        <a href="labs.html">penn labs</a><br/>
-        <a href="tumblr.html">tumblr</a><br/>
-        <a href="fnar264.html">fnar 264</a><br/>
-      </div>
+    <div class="dropdown"><a href="design.html"><div class="nav-btn">design</div></a>
+        <div class="dropdown-content">
+          <a href="spotify.html">spotify</a><br/>
+          <a href="dp.html">the dp</a><br/>
+          <a href="labs.html">penn labs</a><br/>
+          <a href="tumblr.html">tumblr</a><br/>
+          <a href="fnar264.html">fnar 264</a><br/>
+        </div>
+    </div>
+
+    <a href="art.html"><div class="nav-btn">
+      art
+    </div></a>
+
+    <a href="about.html"><div class="nav-btn">
+      about
+    </div></a>
   </div>
+</div>
 
-  <a href="art.html"><div class="nav-btn">
-    art
-  </div></a>
+<button class="music-popup" onclick="togglePlaylist()">
+  <img src="img/icons/play.svg" class="play-btn">
+</button>
+
+<div id="playlist" style="display:none">
+  <iframe src="https://open.spotify.com/embed/playlist/65h3qfz2HPR3lt9CvMkqfj" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 </div>
 
 <div class="gallerytitle"><p>&#x1F9D0 trussbot:</p></div>
@@ -79,6 +93,18 @@
 	</p>
 	<p>made with &#x1F618 in philly | linda shoutian ting</p>
 </div>
+
+<!-- toggle playlist -->
+<script>
+  function togglePlaylist() {
+    var x = document.getElementById("playlist");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+</script>
 
 </body>
 </html>
