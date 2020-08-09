@@ -248,7 +248,7 @@ li{
 
 .aboutcard {
   width: 48%;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   padding-right: 20px;
   padding-left: 20px;
   padding-top: 5px;
@@ -337,7 +337,7 @@ li{
   padding-top: 6px;
   padding-bottom: 4px;
   padding-left: 12px;
-  margin-top: 30px;
+  margin-top: 40px;
   margin-left: 0px;
   display: none;
   position: absolute;
@@ -378,7 +378,7 @@ li{
 }
 
 .headshot {
-  width: 22%;
+  height: 18vh;
   float: left;
   margin-left: 5px;
   margin-top: 20px;
@@ -404,7 +404,7 @@ li{
     height: 30px;
     max-width: 30px;
     background-color: white;
-    background-image: url(img/icons/list.svg);
+    background-image: url(img/icons/menu.svg);
     background-size: cover;
     border-radius: 5px;
     border: 10px white solid;
@@ -417,9 +417,8 @@ li{
   }
 
   .nav-content {
-    background-color: #e3eae466;
     border-radius: 5px;
-    margin-top: 50px;
+    margin-top: 40px;
     margin-left: -20px;
     padding-top: 10px;
     padding-left: 10px;
@@ -431,7 +430,7 @@ li{
   
   .dropdown-content{
     margin-top: 0px;
-    margin-left: 100px;
+    margin-left: 70px;
   }
 
   .textcard {
