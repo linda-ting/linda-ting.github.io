@@ -378,7 +378,8 @@ li{
 }
 
 .headshot {
-  height: 18vh;
+  height: 10vw;
+  max-height: 150px;
   float: left;
   margin-left: 5px;
   margin-top: 20px;
