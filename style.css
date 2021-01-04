@@ -7,12 +7,12 @@
 }
 
 ::-moz-selection{
-  background: var(--coral);
+  background: var(--turqoise);
   color: #fff;
 }
 
 ::selection{
-  background: var(--coral);
+  background: var(--turqoise);
   color: #fff;
 }
 
@@ -168,44 +168,6 @@ li{
   margin:auto; 
   margin-top:30px; 
   margin-bottom:40px
-}
-
-.music-popup {
-  position: fixed;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  border: 4px solid var(--background-color);
-  background-color: white;
-  bottom: 0px;
-  right: 0px;
-  margin-right: 30px;
-  margin-bottom: 30px;
-}
-
-.music-popup:hover {
-  background-color: var(--blue);
-  cursor: pointer;
-}
-
-#playlist {
-  position: fixed;
-  bottom: 0px;
-  right: 0px;
-  margin-right: 30px;
-  margin-bottom: 90px;
-  border: 6px solid white;
-  border-radius: 5px;
-  background-color: white;
-}
-
-.play-btn {
-  padding-top: 2px;
-}
-
-.play-btn:hover {
-  -webkit-filter: grayscale(100%);
-  -webkit-filter: brightness(100);
 }
 
 .textcard {
@@ -415,6 +377,10 @@ li{
 
   .nav:hover .nav-content {
     display: block;
+  }
+
+  .nav-btn {
+    box-shadow: 4px 4px var(--green);
   }
 
   .nav-content {
