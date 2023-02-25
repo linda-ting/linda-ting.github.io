@@ -361,10 +361,10 @@ li{
   }
 
   .nav {
-    height: 30px;
+    height: auto;
     margin-top: 0px;
-    margin-left: 2vw;
-    padding-bottom: 20px;
+    margin-left: auto;
+    padding-left: 10px;
     width: 100%;
     float: left;
   }
