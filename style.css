@@ -37,7 +37,7 @@
     background-color: #fff;
 }
 
-body{
+body {
   font-family:'Open Sans', sans-serif;
   font-size: 14px;
   background-color: var(--background-color);
@@ -340,8 +340,7 @@ li{
 }
 
 .headshot {
-  height: 10vw;
-  max-height: 150px;
+  height: 10vh;
   float: left;
   margin-left: 5px;
   margin-top: 20px;
@@ -377,10 +376,9 @@ li{
 
   .nav:hover .nav-content {
     display: block;
-  }
-
-  .nav-btn {
-    box-shadow: 4px 4px var(--green);
+    background-color: white;
+    margin-top: 50px;
+    margin-left: -10px;
   }
 
   .nav-content {
@@ -397,7 +395,7 @@ li{
   
   .dropdown-content{
     margin-top: 0px;
-    margin-left: 70px;
+    margin-left: 95px;
   }
 
   .textcard {
@@ -424,6 +422,10 @@ li{
     margin-top: 20px;
     margin-left: 5%;
     width: 90%;
+  }
+
+  .headshot {
+    height: 10vh;
   }
 
   .footer {
