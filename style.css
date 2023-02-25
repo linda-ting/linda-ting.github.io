@@ -17,34 +17,41 @@
 }
 
 ::-webkit-scrollbar-thumb:vertical {
-    background-color: var(--blue);
-    border-radius: 9px;
-    border: 4px solid #fff;
-    height: 40vh;
+  background-color: var(--blue);
+  border: 3px solid #fff;
+  height: 40vh;
 }
 
 ::-webkit-scrollbar-thumb:horizontal {
-    background-color: var(--blue);
-    border-radius: 9px;
-    border: 4px solid #fff;
-    width: 40vw;
+  background-color: var(--blue);
+  border: 3px solid #fff;
+  width: 40vw;
 }
 
 ::-webkit-scrollbar {
-    height: 0px;
-    width: 14px;
-    border-radius: 5px;
-    background-color: #fff;
+  height: 0px;
+  width: 8px;
+  background-color: #fff;
 }
 
 body {
-  font-family:'Open Sans', sans-serif;
-  font-size: 14px;
+  font-family: "Ubuntu Mono";
+  font-size: 12px;
   background-color: var(--background-color);
-  margin: 0px;
-  padding: 0px;
-  border: 0px;
-  min-height: 100vh;
+  margin-top: 15vh;
+  margin-left: 15vw;
+  margin-right: 15vw;
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  overflow: scroll;
+  height: 70vh;
+  width: 40vw;
+  margin-left: 10%;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 a {
@@ -76,17 +83,13 @@ li{
 .nav-btn {
   background-color: white;
   color: black;
-  border-radius: 5px;
   width: min-content;
   height: 15px;
   text-align: center;
-  float: left;
+  float: right;
   margin-right: 10px;
   margin-bottom: 10px;
-  padding-right: 10px;
-  padding-left: 10px;
-  padding-top: 5px;
-  padding-bottom: 10px;
+  padding: 5px;
   vertical-align: middle;
 }
 
@@ -97,11 +100,11 @@ li{
 }
 
 .nav {
-  margin-left: 25%;  
-  margin-top: 40px;
-  margin-bottom: 40px;
-  height: 30px;
-  width: 50%;
+  height: 50vh;
+  width: 50px;
+  margin-top: 10vh;
+  margin-left: 8vw;
+  float: left;
 }
 
 .nav a {
@@ -127,52 +130,42 @@ li{
 
 .tags {
   margin: auto;
-  height: 28px;
+  height: 25px;
   width: max-content;
   flex-wrap: wrap;
+  padding-bottom: 4px;
 }
 
 .tag {
   background-color: var(--background-color);
   color:#92a195;
   font-weight: bold;
-  border-radius: 5px;
+  font-size: 12px;
   width: min-content;
-  height: 16px;
   text-align: center;
   float: left;
   margin-right: 4px;
   margin-left: 4px;
   padding-right: 10px;
   padding-left: 10px;
-  padding-top: 4px;
-  padding-bottom: 7px;
-  font-size: 12px;
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
 
 .footer {
-  text-align: center; 
-  margin-left: 25%;
-  width: 50%; 
+  text-align: center;
+  width: 100%; 
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  padding-right: 20px;
-  padding-left: 20px;
   padding-top: 5px;
   padding-bottom: 5px;
-  box-sizing: border-box;
   background-color: white;
-  border-radius: 5px;
-  line-height: 22px;
-  margin:auto; 
-  margin-top:30px; 
-  margin-bottom:40px
+  margin-top: 30px;
 }
 
 .textcard {
-  margin-left: 25%;
-  width: 50%;
+  width: 100%;
   margin-bottom: 40px;
   padding-right: 20px;
   padding-left: 20px;
@@ -182,7 +175,6 @@ li{
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   background-color: white;
-  border-radius: 5px;
   line-height: 22px;
 }
 
@@ -219,7 +211,6 @@ li{
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   background-color: white;
-  border-radius: 5px;
   line-height: 22px;
 }
 
@@ -245,11 +236,9 @@ li{
   text-decoration: none;
 }
 
-.gallerytitle{  
-  padding-left: 10px;
+.gallerytitle{
   margin-bottom: 30px;
-  margin-left: 25%;
-  width: 50%;
+  width: 100%;
   color: var(--blue);
   font-weight: 900;
   text-decoration: bold;
@@ -257,8 +246,7 @@ li{
 }
 
 .gallery{
-  width: 50%;
-  margin-left: 25%;
+  width: 100%;
   display: block;
   text-align: center;
   display: flex;
@@ -269,15 +257,14 @@ li{
 }
 
 .gallerycontainer{
-  width: 46%;
+  width: 45%;
   margin-bottom: 30px;
-  border: 6px solid #fff;;
-  border-radius: 5px;
+  border: 2px solid #fff;
   background-color: white;
 }
 
 .gallerycontainer:hover {
-  border: 6px solid var(--coral);
+  border: 2px solid var(--blue);
 }
 
 .galleryart{
@@ -286,28 +273,27 @@ li{
 
 .galleryart img{
   width: 100%;
-  display: block;
+  display: inline-grid;
+  padding: 0px;
 }
 
 .dropdown{
   position: relative;
   display: inline-block;
-  float: left;
+  float: right;
 }
 
 .dropdown-content{
   padding-top: 6px;
   padding-bottom: 4px;
   padding-left: 12px;
-  margin-top: 40px;
-  margin-left: 0px;
+  margin-left: 100%;
   display: none;
   position: absolute;
   background-color: #fff;
   min-width: 90px;
   z-index: 2;
   line-height: 30px;
-  border-radius: 5px;
 }
 
 .dropdown-content a{
@@ -331,7 +317,7 @@ li{
 }
 
 .dropdown:hover .dropbutton {
-  color: var(--coral);
+  color: var(--blue);
 }
 
 .dropdown-content a:active {
@@ -340,13 +326,13 @@ li{
 }
 
 .headshot {
-  height: 70px;
+  height: 10vh;
+  max-height: 90px;
   float: left;
   margin-left: 5px;
   margin-top: 20px;
   margin-right: 23px;
-  margin-bottom: 10px;  
-  border-radius: 5px;
+  margin-bottom: 10px;
 }
 
 .icon{
@@ -362,16 +348,25 @@ li{
 }
 
 @media (max-width: 800px) {
+  body {
+    margin-top: 8vh;
+  }
+
+  .container {
+    width: 100%;
+    height: 70vh;
+    margin: 0px;
+    padding: 0px;
+  }
+
   .nav {
     height: 30px;
     max-width: 30px;
     background-color: white;
     background-image: url(img/icons/menu.svg);
     background-size: cover;
-    border-radius: 5px;
     border: 10px white solid;
-    margin-top: 10px;
-    margin-right: 10px;
+    margin: 0px 0px 10px 0px;
   }
 
   .nav:hover .nav-content {
@@ -382,7 +377,6 @@ li{
   }
 
   .nav-content {
-    border-radius: 5px;
     margin-top: 40px;
     margin-left: -20px;
     padding-top: 10px;
@@ -392,14 +386,21 @@ li{
     width: min-content;
     z-index: 1;
   }
+
+  .nav-btn {
+    float: left;
+  }
+
+  .dropdown {
+    float: left;
+  }
   
   .dropdown-content{
     margin-top: 0px;
-    margin-left: 95px;
+    margin-left: 130%;
   }
 
   .textcard {
-    margin-left: 5%;
     width: 90%;
   }
 
@@ -409,18 +410,15 @@ li{
   }
   
   .gallery {
-    margin-left: 5%;
     width: 90%;
   }
   
   .gallerytitle {
-    margin-left: 5%;
     width: 90%;
   }
 
   .nav {
     margin-top: 20px;
-    margin-left: 5%;
     width: 90%;
   }
 
@@ -429,7 +427,6 @@ li{
   }
 
   .footer {
-    margin-left: 5%;
     width: 90%;
   }
 }
